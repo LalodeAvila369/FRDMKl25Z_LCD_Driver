@@ -146,3 +146,19 @@ void Line (int i){
 		LCD_DDRAM(00u);
 	}
 }
+
+void Drucken_LCD(char Nachricht[]){
+	int i = 0;
+	int Zeichenketten = (strlen(Nachricht)-1);
+	while (i <= Zeichenketten){
+		if(i==16){
+			Line(2);
+			LCD_Write(Nachricht[i]);
+			i++;
+		}else{
+			LCD_Write(Nachricht[i]);
+			i++;
+		}
+
+	}
+}

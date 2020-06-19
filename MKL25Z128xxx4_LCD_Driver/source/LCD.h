@@ -26,5 +26,6 @@ void LCD_CGRAM(uint8_t Address);
 void LCD_DDRAM(uint8_t Address);
 void Delay (uint32_t delay);
 void Line (int i);
+void Drucken_LCD(char Nachricht[]);
 
-#define DELAY 10000
+#define DELAY 18000
